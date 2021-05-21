@@ -29,8 +29,9 @@ fn generate_hash(buffer: &[u8]) -> PyResult<usize> {
     };
 
     // Resize to 8x8px, ignore aspect ratio, convert to greyscale
-    let img = image_original.resize_exact(8, 8, image::imageops::Lanczos3);
-    let img = img.to_luma8();
+    let img = image_original
+        .resize_exact(8, 8, image::imageops::Lanczos3)
+        .to_luma8();
 
     // This is a lot of chained method calls, so here's a breakdown:
     // - Get the image pixels, clone and map a closure on them that gets their value
