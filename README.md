@@ -4,10 +4,7 @@
     <br>
 > [Install it here](https://github.com/nickofolas/TheReposterminator/raw/master/popout-viewer.user.js)
 
-TheReposterminator is a Reddit bot made to detect reposts, and help make moderating a whole lot easier.
-* Indexes submission media as soon as it joins a subreddit
-* Retains indexed media even after being removed from a subreddit, so if readded, it can start working again without a problem
-* Reports possible reposts, and leaves a comment with more detail, listing all detected duplicates
+TheReposterminator is a Reddit bot made to detect reposts.
 
 ## Documentation
 Documentation explaining everything about using and configuring TheReposterminator can be found [here](https://github.com/nickofolas/TheReposterminator/raw/master/doc).
