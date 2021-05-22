@@ -185,7 +185,7 @@ class Sentry:
                 match.similarity
             )
 
-            if len(rows + row) < 9500:
+            if len(rows + row) < 5000:
                 rows += row
 
         submission.report(f"Possible repost ( {len(matches)} matches |"

@@ -150,7 +150,7 @@ class Interactive:
                 match.similarity
             )
 
-            if len(rows + row) > 9500:
+            if len(rows + row) > 2500:
                 break
             rows += row
 
