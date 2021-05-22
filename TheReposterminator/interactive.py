@@ -106,7 +106,7 @@ class Interactive:
                 matches,
                 key=operator.attrgetter("similarity"),
                 reverse=True
-            )
+            )[:100]
             self.do_response(
                 message=message,
                 submission=submission,
