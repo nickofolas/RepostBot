@@ -1,0 +1,15 @@
+[package]
+name = "image-hash"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+image = "0.23.14"
+
+[dependencies.pyo3]
+version = "0.13.2"
+features = ["extension-module"]
+
+[lib]
+name = "image_hash"
+crate-type = ["cdylib"]

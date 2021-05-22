@@ -18,7 +18,7 @@ along with TheReposterminator.  If not, see <https://www.gnu.org/licenses/>.
 import argparse
 import logging
 
-from .bot import BotClient, logger
+from TheReposterminator import BotClient, logger
 
 client = BotClient()
 

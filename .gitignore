@@ -1,7 +1,18 @@
+# Only used for debugging
+image_hash/
+
 __pycache__/
 .vscode/
 .venv/
 *.log
 *.swp
-.env
-config.py
+config.toml
+*.py[cod]
+*.egg-info/
+**/dist/
+build/
+
+# Added by cargo
+
+/target
+Cargo.lock

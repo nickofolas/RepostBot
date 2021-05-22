@@ -1,0 +1,7 @@
+respond_to_mentions = false
+
+mentioned_threshold = 85
+
+sentry_threshold = 90
+
+remove_sentry_comments = true

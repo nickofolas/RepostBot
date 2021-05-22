@@ -1,0 +1,25 @@
+[reddit]
+client_id = ""
+client_secret = ""
+password = ""
+user_agent = ""
+username = ""
+
+[database]
+dbname = ""
+user = ""
+host = ""
+password = ""
+
+[templates]
+row_auto = "{0} | {1} | [URL]({2}) | [{3}](https://redd.it/{4}) | {5} | {6} | {7}%\n"
+info_auto = "User | Date | Image | Title | Karma | Status | Confidence\n:---|:---|:---|:---|:---|:---|:---|:---\n{0}"
+
+# These are tentative
+row_mentioned = "{0} | [URL]({1}) | [{2}](https://redd.it/{3}) | {4} | {5}%\n"
+info_mentioned = "Date | Image | Title | Status | Confidence\n:---|:---|:---|:---|:---|:---|:---|:---\n{0}"
+
+bot_notice = "\n\n---\n^^^I ^^^am ^^^a ^^^bot, ^^^and ^^^this ^^^action ^^^was ^^^performed ^^^automatically. ^^^Check ^^^my ^^^[subreddit](https://reddit.com/r/TheReposterminator) ^^^for ^^^more ^^^information."
+
+[limits]
+minimum_threshold_allowed = 80
