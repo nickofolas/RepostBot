@@ -54,6 +54,10 @@ class Sentry:
             return False
 
         with requests.get(img_url) as resp:
+            if resp.status_code == 404:
+                logger.debug("Ignoring 404 on fetch_media")
+                return False
+
             image_bytes = resp.content
 
             if len(image_bytes) < 89_478_485:
