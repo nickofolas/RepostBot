@@ -19,6 +19,8 @@ I'd prefer that you don't run an instance of the bot, but I can't stop you, so h
 
 1. Install **Python3.9** or above, as it is required to run the bot at all.
 
+    *At this point, I would highly recommend creating a `venv` to do all of your work in, as it will help avoid pollution of your system's global package space.*
+
 2. Install the bot's dependencies, that is, `pip install -Ur requirements.txt`
 
 3. Have a database set up, and with the `psql` tool, run:
@@ -29,7 +31,7 @@ I'd prefer that you don't run an instance of the bot, but I can't stop you, so h
 
 4. Create a copy of `example_config.toml`, and rename it to `config.toml`. Add the correct values to the file.
 
-5. Have the Rust language installed on your system, and run `python setup.py install`. This will install the required cargo crates, and then build the Rust component of the project.
+5. Have the Rust language installed on your system, and change directory into `image_hash`. Then, run `maturin build --release`. Once this completes, run `pip install target/wheels/image_hash*.whl` to install the image hashing package. Ensure that the wheel you install from uses the correct CPython version.
 
 6. Run the bot
 
