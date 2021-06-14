@@ -22,6 +22,7 @@ from prawcore import exceptions
 
 logger = logging.getLogger(__name__)
 
+
 class MessageHandler:
 
     def __init__(self, bot):
@@ -57,7 +58,7 @@ class MessageHandler:
 
                     if self.bot.get_sub(subname := message.subject.split("r/")[-1]):
                         self.run_command(command, subname, message)
-                    
+
                     else:
                         message.reply("❌ I don't currently moderate this subreddit!")
 
@@ -114,8 +115,8 @@ class MessageHandler:
 
     def run_command(self, command, subname, message):
         # Check that the user actually mods the subreddit
-        if not subname in [*map(str, message.author.moderated())]:
-            message.reply(f"❌ You don't mod this subreddit!")
+        if subname not in [*map(str, message.author.moderated())]:
+            message.reply("❌ You don't mod this subreddit!")
 
         command(subname, message)
 

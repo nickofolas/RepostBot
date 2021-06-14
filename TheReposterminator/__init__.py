@@ -84,7 +84,7 @@ class BotClient:
         Runs the bot (this is blocking!)
         """
 
-        self.get_all_configs() # This operation is very slow
+        self.get_all_configs()  # This operation is very slow
         while True:
             if not self.subreddits:
                 self.message_handler.handle()  # In case there are no subs

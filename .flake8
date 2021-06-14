@@ -6,4 +6,5 @@ ignore =
     E302,
     E305,
     F401,  # Unused import
-    E731
+    E731,
+    W503   # Despite flake8 complaints, best practice is line break before operator

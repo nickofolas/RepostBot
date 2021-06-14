@@ -43,7 +43,7 @@ class Interactive:
             return
             # For the time being, ignore any subs that aren't indexed
             # Hopefully to prevent annoyance and stuff
-    
+
         if not (
             message.body.split("u/")[-1].lower()
             == self.bot.config["reddit"]["username"].lower()
