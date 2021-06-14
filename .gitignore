@@ -1,6 +1,3 @@
-# Only used for debugging
-image_hash/
-
 __pycache__/
 .vscode/
 .venv/
@@ -14,5 +11,5 @@ build/
 
 # Added by cargo
 
-/target
+image_hash/target
 Cargo.lock

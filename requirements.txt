@@ -2,4 +2,4 @@ psycopg2  # or psycopg2-binary if need be
 praw
 requests
 toml
-setuptools-rust
+maturin

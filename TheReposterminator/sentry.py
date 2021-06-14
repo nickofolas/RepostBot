@@ -24,7 +24,7 @@ from io import BytesIO
 
 import praw
 import requests
-from image_hash.image_hash import compare_hashes, generate_hash
+from image_hash import compare_hashes, generate_hash
 from prawcore import exceptions
 
 # Define namedtuples

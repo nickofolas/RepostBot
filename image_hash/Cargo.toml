@@ -1,6 +1,7 @@
 [package]
 name = "image-hash"
 version = "0.1.0"
+authors = ["nickofolas <60761231+nickofolas@users.noreply.github.com>"]
 edition = "2018"
 
 [dependencies]

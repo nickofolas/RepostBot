@@ -20,7 +20,7 @@ import operator
 from collections import namedtuple
 from datetime import datetime
 
-from image_hash.image_hash import compare_hashes
+from image_hash import compare_hashes
 
 MediaData = namedtuple("MediaData", "hash id subname")
 Match = namedtuple("Match", "hash id subname similarity")
