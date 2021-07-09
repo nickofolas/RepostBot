@@ -40,8 +40,8 @@ class MessageHandler:
             if "username mention" in message.subject.lower():
                 if (
                     self.bot.subreddit_configs
-                    [str(message.subreddit)]
-                    ["respond_to_mentions"]
+                    .get(str(message.subreddit), {})
+                    .get("respond_to_mentions")
                 ):
                     self.bot.interactive.receive_mention(message)
 
